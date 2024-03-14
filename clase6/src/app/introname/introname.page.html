@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Nombre masculino o femenino</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<ion-content>
+  
+  <ion-item>
+    <ion-input placeholder="Introduce tu Nombre" [(ngModel)]="nombre" ></ion-input>
+    
+  </ion-item>
+  
+  <ion-button (click)="handleFetch()">Predecir Género</ion-button>
+  
+  <ion-item>
+    <ion-label>Género Predicho:</ion-label>
+    <ion-label>{{ genero }}</ion-label>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label [style.background]="predictedColor">Color Indicativo:</ion-label>
+  </ion-item>
+  
+</ion-content>
+

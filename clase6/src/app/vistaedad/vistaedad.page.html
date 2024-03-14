@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Vista Nombre y Edad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input placeholder="Introduce tu Nombre" [(ngModel)]="nombre" ></ion-input>
+    
+  </ion-item>
+  
+  <ion-button (click)="handleFetch()">Predecir edad</ion-button>
+
+  <ion-item>
+    <ion-label>Género Predicho:</ion-label>
+    <ion-label>Mensaje:</ion-label>
+  </ion-item>
+
+</ion-content>

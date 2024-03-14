@@ -11,9 +11,9 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class VistapaisPage implements OnInit {
-
+  async handleFetch() {}
   constructor() { }
-
+  nombre: string = '';
   ngOnInit() {
   }
 

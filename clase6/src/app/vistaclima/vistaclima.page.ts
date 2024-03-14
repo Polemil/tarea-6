@@ -12,8 +12,9 @@ import { IonicModule } from '@ionic/angular';
 })
 export class VistaclimaPage implements OnInit {
 
+  async handleFetch() {}
   constructor() { }
-
+  nombre: string = '';
   ngOnInit() {
   }
 

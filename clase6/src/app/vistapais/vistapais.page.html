@@ -5,9 +5,15 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">vistapais</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item>
+    <ion-input placeholder="Introduce un pais en ingles" [(ngModel)]="nombre" ></ion-input>
+    
+  </ion-item>
+  
+  <ion-button (click)="handleFetch()">buscar</ion-button>
+
+  <ion-item>
+    <ion-label>Universidades:</ion-label>
+  
+  </ion-item>
 </ion-content>
